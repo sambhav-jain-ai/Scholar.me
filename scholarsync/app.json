@@ -1,0 +1,61 @@
+{
+  "expo": {
+    "name": "ScholarSync",
+    "slug": "scholarsync",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/images/icon.png",
+    "scheme": "scholarsync",
+    "userInterfaceStyle": "dark",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/images/splash.png",
+      "resizeMode": "cover",
+      "backgroundColor": "#0A0A0F"
+    },
+    "ios": {
+      "supportsTablet": false
+    },
+    "android": {
+      "backgroundColor": "#0A0A0F"
+    },
+    "web": {
+      "favicon": "./assets/images/icon.png"
+    },
+    "plugins": [
+      [
+        "expo-router",
+        {
+          "origin": "https://replit.com/"
+        }
+      ],
+      "expo-font",
+      "expo-web-browser",
+      "expo-document-picker",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "ScholarSync needs photo access to attach timetable images."
+        }
+      ],
+      [
+        "expo-speech-recognition",
+        {
+          "microphonePermission": "ScholarSync needs microphone access for voice input.",
+          "speechRecognitionPermission": "ScholarSync needs speech recognition to convert your voice to text."
+        }
+      ],
+      "expo-secure-store",
+      [
+        "expo-calendar",
+        {
+          "calendarPermission": "ScholarSync needs access to your calendar to sync your timetable and exams."
+        }
+      ]
+    ],
+    "experiments": {
+      "typedRoutes": true,
+      "reactCompiler": true
+    }
+  }
+}
