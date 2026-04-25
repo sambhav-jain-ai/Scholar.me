@@ -32,3 +32,21 @@ npm start
 - `PORT` — port to run the server on (e.g. 3000)
 - `AI_INTEGRATIONS_ANTHROPIC_API_KEY` — your Anthropic API key
 - `AI_INTEGRATIONS_ANTHROPIC_BASE_URL` — leave as https://api.anthropic.com
+
+## Setup
+
+### 1. Clone the repo
+git clone https://github.com/yourusername/scholarsync.git
+
+### 2. Setup API Server
+cd api-server
+npm install
+cp .env.example .env
+# Add your Gemini API key to .env
+npm run dev
+
+### 3. Setup Mobile App
+cd ../scholarsync
+pnpm install
+cp .env.example .env
+npx expo start --clear
